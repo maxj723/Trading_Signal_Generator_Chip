@@ -1,0 +1,37 @@
+# File Created by Max Johnson at Tue Jan  7 03:54:30 2025
+# assisted by CdsLibEditor
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+DEFINE basic $CDK_DIR/lib/basic
+DEFINE NCSU_Analog_Parts $CDK_DIR/lib/NCSU_Analog_Parts
+DEFINE NCSU_Digital_Parts $CDK_DIR/lib/NCSU_Digital_Parts
+#DEFINE      MOSIS_Layout_Test       $CDK_DIR/lib/MOSIS_Layout_Test
+DEFINE NCSU_TechLib_ami06 $CDK_DIR/lib/NCSU_TechLib_ami06
+DEFINE NCSU_TechLib_ami16 $CDK_DIR/lib/NCSU_TechLib_ami16
+DEFINE NCSU_TechLib_hp06 $CDK_DIR/lib/NCSU_TechLib_hp06
+DEFINE NCSU_TechLib_tsmc02 $CDK_DIR/lib/NCSU_TechLib_tsmc02
+DEFINE NCSU_TechLib_tsmc02d $CDK_DIR/lib/NCSU_TechLib_tsmc02d
+DEFINE NCSU_TechLib_tsmc03 $CDK_DIR/lib/NCSU_TechLib_tsmc03
+DEFINE NCSU_TechLib_tsmc03d $CDK_DIR/lib/NCSU_TechLib_tsmc03d
+DEFINE NCSU_TechLib_tsmc04_4M2P $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
+
+DEFINE UofU_Analog_Parts ~/esc-courses/fa24-cse-30342.01/public/UofU_Analog_Parts
+DEFINE UofU_Example ~/esc-courses/fa24-cse-30342.01/public/UofU_Example
+DEFINE UofU_Digital_Parts_v1_2 ~/esc-courses/fa24-cse-30342.01/public/UofU_Digital_Parts_v1_2
+DEFINE UofU_TechLib_ami06 ~/esc-courses/fa24-cse-30342.01/public/UofU_TechLib_ami06
+DEFINE UofU_Pads ~/esc-courses/fa24-cse-30342.01/public/UofU_Pads
+
+DEFINE analogLib $IC/tools.lnx86/dfII/etc/cdslib/artist/analogLib
+DEFINE functional $IC/tools.lnx86/dfII/etc/cdslib/artist/functional
+DEFINE sbaLib $IC/tools.lnx86/dfII/etc/cdslib/artist/sbaLib
+
+DEFINE lab1_mjohns79 /escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab1_mjohns79
+DEFINE lab2_mjohns79 /escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab2_mjohns79
+DEFINE hw2_mjohns79 /escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/hw2_mjohns79
+DEFINE wordlib8 wordlib8
+DEFINE processor8 processor8
+DEFINE muddlib11 muddlib11
+DEFINE HMC_Sheets_8ths oa/HMC_Sheets_8ths
+DEFINE day_trading /escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab5solo/day_trading
+DEFINE sample /escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab5solo/sample
+DEFINE controller_nn controller_nn
+DEFINE processor8_nn processor8_nn

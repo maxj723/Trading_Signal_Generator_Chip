@@ -1,0 +1,26 @@
+# Layer map for converting from GDS (SCMOS) to cadence
+#
+# Some of these layers are unlikely to be used... 
+#
+# note that I've commented out the pin layers. Everything
+# that is read in will be on a drawing layer. 
+#
+# Cadence layer     Cadence layer purpose       CIF layer
+# -------------     ---------------------       -----------
+nwell               drawing                     CWN
+# All layer CAA goes to active, so you can't see the
+# difference between nactive and pactive any more
+active              drawing                     CAA
+nselect             drawing                     CSN
+pselect             drawing                     CSP
+poly                drawing                     CPG
+metal1              drawing                     CMF
+metal2              drawing                     CMS
+metal3              drawing                     CMT
+cc                  drawing                     CCC
+via                 drawing                     CVA
+via2                drawing                     CVS
+glass               drawing                     COG
+pad                 drawing                     XP
+elec		    drawing			CP2
+res_id		    drawing			CHR

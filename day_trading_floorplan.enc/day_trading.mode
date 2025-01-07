@@ -1,0 +1,53 @@
+if {![namespace exists ::IMEX]} { namespace eval ::IMEX {} }
+set ::IMEX::dataVar [file dirname [file normalize [info script]]]
+set ::IMEX::libVar ${::IMEX::dataVar}/libs
+
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixCap true }
+catch { setOptMode -fixFanoutLoad false }
+catch { setOptMode -fixTran true }
+setExtractRCMode  -engine preRoute
+catch {setNanoRouteMode -quiet -drouteUseMinSpacingForBlockage auto}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -routeExpSignatureEco false}
+catch {setNanoRouteMode -quiet -routeStrictlyHonorNonDefaultRule "false"}
+catch {setNanoRouteMode -quiet -routeWithSiDriven false}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven false}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -place_design_floorplan_mode false }
+catch { setPlaceMode -place_global_place_io_pins true }
+catch { setPlaceMode -timingDriven false }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setSrouteMode -viaConnectToShape noshape }
+catch { set_verify_drc_mode -area {0 0 0 0} }
+catch { set_verify_drc_mode -check_implant true }
+catch { set_verify_drc_mode -check_implant_across_rows false }
+catch { set_verify_drc_mode -check_ndr_spacing false }
+catch { set_verify_drc_mode -check_same_via_cell false }
+catch { set_verify_drc_mode -disable_rules "" }
+catch { set_verify_drc_mode -exclude_pg_net false }
+catch { set_verify_drc_mode -ignore_trial_route false }
+catch { set_verify_drc_mode -limit 1000 }
+catch { set_verify_drc_mode -report ${::IMEX::libVar}/misc/day_trading.drc.rpt }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_copyNetPropToNewNet true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware true }
+catch { setAddRingMode -avoid_short false }
+catch { setAddRingMode -extend_over_row false }
+catch { setAddRingMode -ignore_rows false }
+catch { setAddRingMode -orthogonal_only true }
+catch { setAddRingMode -ring_target default }
+catch { setAddRingMode -skip_crossing_trunks none }
+catch { setAddRingMode -skip_via_on_pin standardcell }
+catch { setAddRingMode -skip_via_on_wire_shape noshape }
+catch { setAddRingMode -stacked_via_bottom_layer metal1 }
+catch { setAddRingMode -stacked_via_top_layer metal3 }
+catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setSIMode -separate_delta_delay_on_data true }

@@ -1,0 +1,34 @@
+# Layer map for converting from cadence to GDS format (SCMOS processes)
+#
+# Some of these layers are unlikely to be used.. .
+#
+# Cadence layer     Cadence layer purpose       GDSII layer
+# -------------     ---------------------       -----------
+nwell               drawing                     42  0
+pwell               drawing                     41  0
+# note that all three active layers map to GDS layer 43
+active              drawing                     43  0
+nactive		    drawing		   	43  0
+pactive	            drawing		 	43  0
+nselect             drawing                     45  0
+pselect             drawing                     44  0
+poly                drawing                     46  0
+poly                pin                         46  0
+elec                drawing                     56  0
+metal1              drawing                     49  0
+metal2              drawing                     51  0
+metal3              drawing                     62  0
+metal1              pin	                        49  0
+metal2              pin                         51  0
+metal3              pin                         62  0
+# All four contact types go to GDS layer 25
+cc                  drawing                     25  0
+ca                  drawing                     25  0
+cp                  drawing                     25  0
+ce                  drawing                     25  0
+via                 drawing                     50  0
+via2                drawing                     61  0
+glass               drawing                     52  0
+pad                 drawing                     26  0
+highres             drawing                     34  0
+res_id              drawing                     34  0

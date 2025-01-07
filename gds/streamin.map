@@ -1,0 +1,34 @@
+# Layer map for converting from GDS (SCMOS) to cadence
+#
+# Some of these layers are unlikely to be used... 
+#
+# note that I've commented out the pin layers. Everything
+# that is read in will be on a drawing layer. 
+#
+# Cadence layer     Cadence layer purpose       GDSII layer
+# -------------     ---------------------       -----------
+nwell               drawing                     42  0
+pwell               drawing                     41  0
+# All layer 43 goes to active, so you can't see the
+# difference between nactive and pactive any more
+active              drawing                     43  0
+#nactive	    drawing			43  0
+#pactive	    drawing			43  0
+nselect             drawing                     45  0
+pselect             drawing                     44  0
+poly                drawing                     46  0
+elec                drawing                     56  0
+metal1              drawing                     49  0
+metal2              drawing                     51  0
+metal3              drawing                     62  0
+# No pin layers when reading in. 
+#metal1              pin	                49  0
+#metal2              pin                        51  0
+#metal3              pin                        62  0
+# All layer 25 goes to cc. 
+cc                  drawing                     25  0
+via                 drawing                     50  0
+via2                drawing                     61  0
+glass               drawing                     52  0
+pad                 drawing                     26  0
+res_id              drawing                     34  0

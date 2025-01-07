@@ -1,0 +1,52 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
+\o Sub version:		sub-version  s231 
+\o Arguments:		-display localhost:10.0 -mpssession virtuoso10989 -mpshost student04 -namespace CDBA -cdslib /escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab5solo/cds.lib 
+\o Working Directory:	student04:/escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab5solo
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a nrResizeWindow(cdsLibEditor list(20 21 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/escnfs/courses/fa24-cse-30342.01/dropbox/mjohns79/VLSI/lab5solo"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(4 43 531 513))
+\a newLibraryDialog->libraryListBox->value = "controller_nn"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "controller_nn"
+\a nrSetCurrentWindow(newLibraryDialog)
+\a newLibraryDialog->okButton->value = t
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 29 0)
+\o Active cell: 29 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(4 43 531 513))
+\a newLibraryDialog->libraryListBox->value = "processor8_nn"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "processor8_nn"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 29 0 "processor8_nn")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 30 0)
+\o Active cell: 30 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileExitButton->value = t
+\o QUESTION (CLE-205): You have made changes which have not been saved. \n\nWould you like to save your changes? 
+\a nrSetWindowVisibility(needSaveDialog "show")
+\a nrSetCurrentWindow(needSaveDialog)
+\a nrResizeWindow(needSaveDialog list(85 43 369 136))
+\a needSaveDialog->yesButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)
