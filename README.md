@@ -1,5 +1,7 @@
 # Trading_Signal_Generator_Chip
 
+![image](trading_def.png)
+
 I used the prior [repository](https://github.com/maxj723/DIC_Trading_Signal_Generator) to build the chip layout for the .def file.   
 
 First, I slightly modified day_trading.v to use a different clock signal for two latches instead of a flip-flop. This is because the muddlib lef library does not support flops.   
